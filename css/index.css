@@ -1,0 +1,1476 @@
+/* Good color #c69b58; Works well against the navy */
+
+body {
+    /*background: url('img/texture.png');*/
+    background: url('img/t2.jpg') no-repeat;
+    background-position: top center;
+    background-color: black;
+    background-position-y: 120px;
+    /*background-attachment: fixed;*/
+    margin: 0px; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: #aaa;
+}
+
+/* Background */
+#wrapper {
+}
+
+#footer {
+    position: absolute;
+    left: 970px;
+    font-size: 8px;
+    color: #444;
+    bottom: -13px;
+}
+
+#footer a {
+    text-decoration: underline;
+}
+
+#top_bar {
+    width: 100%;
+    height: 40px;
+    background: #003959;
+    background: url('img/topbar_texture.png');
+    border-bottom: 1px solid black;
+}
+
+#top_bar #content {
+    width: 1060px;
+    font-size: 15px;
+    overflow: auto;
+    
+    /*
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-transform: uppercase;*/
+    
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top_bar #content #title {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+#top_bar #content #login {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+#top_bar #content #logout {
+    cursor: pointer;
+}
+
+/* Container */
+#container {
+    position: relative;
+    width: 1060px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background: url('img/header_texture.png');
+    border: 1px solid #000;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 120px;
+    color: #aaa;
+}
+
+#header #logo {
+    position: relative;
+    float: left;
+    
+    text-align: center;
+    
+    width: 300px;
+    height: 90%;
+    
+    top: 5%;
+    margin-left: 10px;
+}
+
+#header #logo img {
+    height: 185px;
+    position: relative;
+    z-index: 3;
+    top: -43px; /* -38 */
+    left: 6px; /* 6 */
+}
+
+
+#header #right {
+    position: relative;
+    float: right;
+    width: 740px;
+    height: 100%;
+}
+
+#header #right #top {
+    height: 70%;
+}
+
+#header #right #top #important {
+    position: relative;
+    float: right;
+    
+    text-align: center;
+    
+    background: #040d17;
+    color: #E6E6E6;
+    
+    /* 161C21 melds well.. */
+    
+    line-height: 34px;
+    
+    height: 40%;
+    width: 60%;
+    
+    top: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    
+    border: 1px solid #090B0D;
+}
+
+#header #right #top #important div {
+    display: inline-block; /* Give the parent text-align: center, and this centers.. variable width */
+}
+
+#header #right #top #important img {
+    height: 20px;
+    margin-top: 7px;
+    float: left;
+    margin-right: 1px;
+}
+
+#tespa {
+    position: relative;
+    width: 85px;
+    top: 5px;
+}
+
+#header #right #bottom {
+    height: 30%;
+}
+
+#header #right #bottom #navbar {
+    position: relative;
+    float: left;
+    width: 709px;
+    padding-left: 40px;
+    left: -10px;
+    height: 95%;
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background: #040d17;
+    border-right: 1px solid #040d17;
+    
+    /* If you lower height, increase top by 1:1 ratio.
+    /* Use top/bottom because it is relative unlike margin-top/bottom BUT margin-right/left works */
+    top: 5%;
+ 
+    text-transform: uppercase;
+}
+
+#header #right #bottom #navbar .link {
+    float: left;
+    width: 98px;
+    height: 100%;
+    text-align: center;
+    /* Inspect to find the height of box */
+    line-height: 34px;
+    color: #aaa;
+    -moz-box-shadow: inset 0 0 10px #090B0D;
+}
+
+#header #right #bottom #navbar .link:hover {
+    color: black;
+    background: #6687aa;
+    color: #fff;
+}
+
+#header #right #bottom #navbar .link:hover .drop_link {
+    display: block;
+    background: #6687aa;
+    color: black;
+}
+
+#header #right #bottom #navbar .drop_link:hover  {
+    display: block;
+}
+
+
+
+#header #right #bottom #icon {
+    position: relative;
+    float: right;
+    margin-top: 1px;
+    margin-right: 6px;
+}
+
+#header #right #bottom #icon img {
+    border: 1px solid #07090A;
+    -moz-border-radius: 15px;
+    border-radius: 5px;
+}
+
+#container #content {
+    position: relative;
+    /* Used so.. margin doesn't break? WTF */
+    overflow: auto;
+    width: 100%;
+}
+
+/* HOME PAGE */
+#head_box #banner {
+    width: 100%;
+    height: 350px;
+    z-index: 4;
+}
+
+
+
+#news {
+    color: yellow;
+}
+
+#home {
+    margin: 10px;
+}
+
+#home #left {
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+}
+
+#home #left #navbar {
+    margin-bottom: 6px;
+    position: relative;
+}
+
+#home #left ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#home #left li {
+    width: 100%;
+    background: #040d17;
+    color: #4d7aaa;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    border: 1px inset black;   
+    position: relative;
+    box-shadow: 1px 1px black;
+    text-transform: uppercase;
+}
+
+#stream_list {
+    background: #040d17;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+#stream_list:before {
+    background: none;
+    border: 1px solid #091D33;;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    pointer-events: none;
+}
+
+#stream_list #title {
+    text-align: center;
+    font-size: 18px;
+    color: #4d7aaa;
+    text-shadow: 2px 2px #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#stream_list .stream {
+    height: 64px;
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.stream #stream_img {
+    float: left;
+    background: #173554;
+    padding: 2px;
+    
+}
+
+#stream_img img {
+    height: 60px;
+    width: 70px;
+}
+
+.stream #stream_name {
+    float: left;
+    margin-left: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 110px;
+    font-size: 15px;
+    color: #aaa;
+}
+
+.stream #stream_name div{
+    font-size: 12px;
+    color: #666;
+}
+
+#stream_list .online, .offline {
+    float: right;
+    border-left: 1px solid black;
+    padding-left: 5px; 
+    background: #3558EB;
+    color: black;
+    padding-right: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+#stream_list .offline {
+    background: #666;
+    color: black;
+}
+
+#home #middle {
+    float: left;
+    width: 75%;
+}
+
+#home #middle .article {
+    padding: 5px;
+    background: #040d17;
+    margin-bottom: 10px;
+    height: 180px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#home #middle .article:before {
+    background: none;
+    border: 1px solid #091D33;;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    pointer-events: none;
+}
+
+#past_news {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #040d17;
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#past_news:hover {
+    background: #4d7aaa;
+    color: black;
+    font-weight: bold;
+}
+
+.article_img {
+    position: relative;
+    float: left;
+    width: 40%;
+    padding: 1px;
+    background: #173554;
+}
+
+.article_img img {
+    height: 180px;
+    width: 100%;
+}
+
+.article_info {
+    float: left;
+    margin-left: 1%;
+    width: 58%;
+}
+
+.article_info .article_title {
+    font-size: 24px;
+    color: #4d7aaa;
+    text-shadow: 2px 2px #000000;
+}
+
+.article_date {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.article_date span {
+    color: lightgreen;
+}
+
+.article_summary {
+    font-size: 13px;
+    color: #999;
+}
+
+#home #right {
+    float: left;
+    width: 22%;
+    height: 630px;
+    margin-bottom: 10px;
+}
+
+/* ABOUT PAGE */
+#about_us {
+    width: 96%;
+    padding: 2%;
+    /*background: #495A6B;*/
+    margin-bottom: 13px;
+    font-size: 13px;
+}
+
+#about_us span {
+    color: #4d7aaa;
+}
+
+#about_us #title {
+    font-size: 28px;
+    color: #4d7aaa;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px #000000;
+}
+
+#officer_list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    /*background: #495A6B;*/
+}
+
+#officer_list .officer {
+    margin-bottom: 30px;
+}
+
+#officer_list .officer .info {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    width: 725px;
+}
+
+#officer_list .officer .picture {
+    position: relative;
+    float: left;
+}
+
+#officer_list .officer .picture .profile_img {
+    width: 170px;
+    height: 170px;
+}
+
+#officer_list .officer .picture .elo {
+    position: absolute;
+    top: -10px;
+    left: -8px;
+    width: 187px;
+    height: 188px;
+}
+
+#officer_list .officer .name {
+    font-size: bold 24px/1.25 'Trebuchet MS',Arial,sans-serif !important;
+    text-shadow: 2px 2px #000000;
+    color: white;
+}
+
+#officer_list .officer .name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#officer_list .officer .position {
+    font-size: 22px;
+    color: #4d7aaa;
+}
+
+#officer_list .officer .small {
+    font-size: 10px;
+    color: black;
+}
+
+#officer_list .bio {
+    margin-top: 5px;
+}
+
+/* LOGIN */
+
+
+/* CONTAINER CLASSES */
+
+/* The black box */
+.box {
+    padding: 5px;
+    margin: 10px;
+    width: 1027px;
+    background: #040d17;
+    border: 1px solid black;
+    font-size: 13px;
+    position: relative;
+    /* Stop div breaking */
+    overflow: auto;
+}
+
+.box:before {
+    background: none;
+    border: 1px solid #091D33;;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    pointer-events: none;
+}
+
+.box .box_title {
+    font-size: 28px;
+    color: #4d7aaa;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px #000000;
+}
+
+.box .box_center_title {
+    color: #4d7aaa;
+    font-size: 17px;
+    text-align: center;
+}
+
+#head_box {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: #03192f;
+    font-size: 13px;
+    width: 100%;
+}
+
+/* PROFILE CLASSES */
+#profile {
+    padding: 5px;
+    margin: 15px;
+    color: #F27435;
+}
+
+#profile div {
+    background: #040d17;
+}
+
+#profile #user_bar {
+    float: left;
+    width: 47%;
+    margin-right: 2%;
+    padding: 1%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#user_bar #user_info {
+    margin-bottom: 5px;
+}
+
+
+#profile #level {
+    background: #222;
+    width: 10%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    color: red;
+}
+
+#profile #xp_bar {
+    /* Makes the border apart of the box */
+    -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    
+    border-left: 3px solid black;
+    background: #666;
+    width: 90%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+
+#profile #bar_value {
+    position: relative;
+    background: none;
+    top: -30px;
+}
+
+#profile #xp_bar #filled_bar {
+    background: blue;
+    height: 30px;
+}
+
+#profile #achievement_bar {
+    margin-top: 10px;
+    width: 99%;
+    padding-left: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#achievement_bar .achievement {
+    font-family: Impact, Charcoal, sans-serif;
+    width: 9%;
+    height: 83px;
+    margin-right: 1%;
+    background: gray;
+    float: left;
+    line-height: 83px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+#profile #secret_id {
+    text-align: center;
+    color: orange;
+    float: left;
+    width: 47%;
+    padding: 1%;
+    height: 55px;
+}
+
+#profile #secret_id div {
+    float: left;
+    width: 30%;
+}
+
+#profile #recent_match_box {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+}
+/* FAQ CLASsES */
+.question {
+    color: #4d7aaa;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.answer {
+    color: #aaa;
+    font-size: 16px;
+    margin-top: 2px;
+    padding-left: 50px;
+    display: none;
+}
+
+/* ACCOUNT CLASSES */
+#account #secret_id {
+    text-align: center;
+    color: yellow;
+}
+#account #secret_id span {
+    display: block;
+    color: #4d7aaa;
+    font-size: 17px;
+}
+
+#update_profile input {
+    margin-bottom: 5px;
+}
+
+/* COMPETE CLASSES */
+#compete_banner {
+    background: url('img/compete.jpg');
+    background-size: 1060px 320px;
+    width: 1060px;
+    height: 350px;
+    background-position-y: 10;
+    overflow: auto;
+}
+
+#compete {
+    margin: 10px;
+    width: 1039px
+}
+
+#compete #left {
+    float: left;
+    padding: 0px;
+    width: 76%;
+    margin-right: 1%;
+}
+
+#compete #upcoming_tournament{
+    width: 780px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #040d17;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#compete #tournament_list {
+    width: 780px;
+    padding: 5px;
+    background: #040d17;
+    height: 198px;
+    border: 1px solid black;
+}
+
+#compete #right {
+    float: right;
+    width: 23%;
+}
+
+#compete #official_team {
+    width: 100%;
+    background: #040d17;
+    border: 1px solid black;
+    
+    line-height: 208px;
+    text-align: center;
+}
+
+#compete #headers, #compete .tournament {
+    width: 776px;
+    padding: 2px;
+    height: 26px;
+    line-height: 26px;
+    background: #091D33;
+    color: #999;
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid black;
+}
+
+#compete .tournament:hover {
+    background: #184F8C;
+    color: white;
+}
+
+#compete #headers {
+    background: none;
+    color: #4d7aaa;
+    margin-bottom: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
+}
+
+#tournament_list .date {
+    width: 20%;
+    float: left;
+}
+#tournament_list .name {
+    width: 50%;
+    float: left;
+}
+#tournament_list .status {
+    width: 30%;
+    float: left;
+}
+
+#official_team img {
+    width: 100%;
+}
+
+#ladder {
+    
+}
+
+#ladder #headers {
+    width: 100%;
+    height: 20px;
+}
+#ladder #headers div {
+    float: left;
+    text-align: center;
+    color: #4d7aaa;
+    margin-bottom: 3px;
+}
+#ladder .rank {
+    width: 5%;
+}
+#ladder .summoner {
+    width: 45%;
+    color: #617e9f;
+}
+#ladder .college {
+    width: 30%;
+}
+#ladder .points {
+    width: 20%;
+}
+#ladder #body {
+    border: 1px solid black;
+    border-top: 0px;
+}
+#ladder #body .player_1, .player_2 {
+    width: 100%;
+    height: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: #091D33;
+    border-top: 1px solid black;
+}
+.player_2 {
+    background: #0B2440;
+}
+#ladder #body .player_1 div, .player_2 div {
+    float: left;
+    text-align: center;
+}
+
+
+/* UCSD TEAM CLASSES */
+#ucsd_banner {
+    padding: 15px;
+    background: url('img/ucsd_banner.jpg');
+    background-position-y: 455;
+    background-size: cover;
+    height: 320px;
+}
+
+#head_box #ucsd_img {
+    width: 30%;
+    float: left;
+}
+
+#ucsd_img img {
+    width: 50%;
+}
+
+#ucsd_info {
+    color: black;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ucsd_info .achievement {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* TOURNAMENT CLASSES */
+.tbox {
+    margin: 10px;
+    width: 1037px;
+    background: #040d17;
+    border: 1px solid black;
+    font-size: 13px;
+}
+
+.tbox .title {
+    color: #4d7aaa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#tbackground {
+    width: 1060px;
+    height: 230px;
+    background: url("img/tournament/tournament.jpg");
+    position: relative;
+}
+
+#tname {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    color: orange;
+    font-family: 'Impact', Helvetica, Arial, sans-serif;
+    background: #040d17;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    opacity: 0.8;
+}
+
+#t_navbar {
+    /* Places it at the bottom of parent div */
+    bottom: 0;
+    position: absolute;
+    
+    width: 99%;
+    margin-right: 1%;
+    
+    color: orange;
+    font-family: 'Impact', Helvetica, Arial, sans-serif;
+    opacity: 0.7;
+}
+
+#t_navbar .link {
+    float: right;
+    line-height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+    background: #040d17;
+    border: 1px solid black;
+    border-bottom: 0px;
+    text-transform: capitalize;
+}
+
+#t_navbar .link:hover {
+    background: #173554;
+}
+
+.t_dialog_box {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background: #040d17;
+    border: 1px solid black;
+    font-size: 13px;
+    color: #999;
+}
+
+.t_dialog_box .title {
+    color: #4d7aaa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#t_title {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    line-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    color: #4d7aaa;
+    text-shadow: 2px 2px #000000;
+}
+
+/* HOME CLASSES */
+.tborder {
+    margin: 1px;
+    border: 1px solid #091D33;
+    padding: 5px;
+}
+
+#thome {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+#thome .title {
+    color: #4d7aaa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.home_box {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    background: #040d17;
+    border: 1px solid black;
+    font-size: 13px;
+    color: #999;
+}
+#thome_left {
+    float: left;
+    width: 60%;
+}
+
+#thome_right {
+    float: right;
+    width: 39%;
+}
+
+#t_name {
+    color: #4d7aaa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#t_name div {
+    font-size: 13px;
+    color: #fff;
+}
+
+#t_date status {
+    
+}
+
+/* APPLICANT CLASSES */
+#applicants {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#applicants .team_0, #applicants .team_1 {
+    float: left;
+    width: 183px;
+    margin-left: 8px;
+    margin-right: 9px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: #091D33;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+
+#applicants .team_1 {
+    border: 1px solid #113863;
+}
+
+#applicants .name {
+    text-align: center;
+    color: #4d7aaa;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+#applicants .player {
+    padding-left: 5px;
+}
+
+
+/* COMMUNITY CLASSES */
+#picture_container {
+    overflow: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.com_picture {
+    width: 339px;
+    height: 246px;
+}
+
+.com_picture_box, #first_picture_box {
+    width: 339px;
+    padding: 2px;
+    margin-left: 5px;
+    background: #040d17;
+    height: 246px;
+    float: left;
+}
+
+#first_picture_box {
+    margin-left: 0px;
+}
+
+/* MEMBERS CLASSES */
+#member div {
+    text-align: center;
+}
+
+#member_headers {
+    width: 100%;
+    height: 30px;
+}
+
+#member_headers div {
+    background: white;
+    line-height: 30px;
+    float: left;
+}
+
+.member div {
+    float: left;
+    line-height: 20px;
+}
+
+.member {
+    border-top: 1px solid black;
+    height: 20px;
+    background: blue;
+}
+
+#member .name {
+    width: 30%;
+}
+#member .summoner {
+    width: 40%;
+}
+#member .college {
+    width: 20%;
+}
+#member .points {
+    width: 10%;
+}
+
+/* LOGIN/SIGNUP */
+#register {
+    width: 158px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#register .section_title {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #4d7aaa;
+    font-size: 16px;
+}
+
+#register input, #login input {
+    margin-bottom: 5px;
+}
+#register #submit {
+    margin-top: 15px;
+}
+#register form {
+    margin: 0px;
+}
+.warning {
+    font-size: 10px;
+    color: red;
+}
+.optional {
+    font-size: 10px;
+    color: yellow;
+}
+.section {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 3px;
+    margin-top: 15px;
+}
+
+/* Tournament REGISTER Classes */
+#t_register #team_name {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4d7aaa;
+}
+
+#t_register input {
+    border: 1px solid black;
+    background-color: #999;
+    color: black;
+}
+
+#t_register #teammates {
+    background: #091D33;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: auto; /* Fixes problem where margin pusehs outer div */
+    border: 1px solid black;
+}
+
+#t_register .teammate, #team_headers {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: #4d7aaa;
+}
+#t_register .teammate {
+    color: #888;
+}
+
+#t_register .teammate div, #team_headers div {
+    width: 32%;
+    line-height: 30px;
+    height: 30px;
+    float: left;
+}
+
+#t_register #team_headers {
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+#t_register .teammate input {
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+}
+
+#t_register #add_teammate {
+    color: #aaa;
+    background: black;
+    width: 20%;
+    line-height: 20px;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Tournament MATCH CLASSES */
+#t_match #match_header {
+    width: 100%;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#t_match #match_header .team {
+    width: 45%;
+    float: left;
+}
+#match_header #score {
+    width: 10%;
+    float: left;
+}
+#t_match .team_left, #t_match .team_right {
+    float: left;
+    width: 30%;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#t_match .team_right {
+    text-align: right;
+}
+
+/* TOURNAMENT BRACKET CLASSES */
+#group_stage {
+    padding: 10px;
+}
+
+.group_0, .group_1 {
+    width: 49%;
+    background: #040d17;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.group_1 {
+    float: right;
+}
+
+#group_stage .name {
+    color: #4d7aaa;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+#group_stage .group_matches {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    width: 98%;
+}
+
+#group_stage .match {
+    background: #598CC3;
+    width: 100%;
+    margin-bottom: 2px;
+    line-height: 20px;
+    height: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    color: black;
+    font-family: "TradeCn",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+}
+
+#group_stage .match .team1, #group_stage .match .team2 {
+    float: left;
+    width: 45%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#group_stage .match .team2 {
+    float: right;
+}
+
+#group_stage .match .score {
+    width: 10%;
+    float: left;
+    background: black;
+    height: 24px;
+    line-height: 24px;
+    color: #aaa;
+}
+
+#group_stage .border {
+    margin: 1px;
+    padding: 5px;
+    border: 1px solid #091D33;
+}
+
+
+
+/* STREAM CLASSES */
+
+
+/* EVENTS CLASSES */
+.event {
+    width: 330px;
+    text-align: center;
+    float: left;
+    margin-left: 11px;
+    margin-bottom: 20px;
+}
+
+.event .event_date {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.event .event_title {
+    color: #4d7aaa;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.event .event_img {
+    width: 290px;
+    padding: 2px;
+    background: #173554;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event .event_img img {
+    width: 290px;
+    height: 190px;
+}
+
+/* SINGLE EVENT CLASSES */
+#event {
+    text-align: center;
+}
+
+#event #event_info {
+    margin-left: 10px;
+}
+
+#event .event_date {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#event .event_title {
+    margin-top: 10px;
+    color: #4d7aaa;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+#event .event_img {
+    width: 340px;
+    padding: 2px;
+    background: #173554;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+#event .event_img img {
+    width: 340px;
+    height: 230px;
+}
+
+#event_details {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #08203b;
+    margin-top: 15px;
+    padding: 8px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    color: #bfbfbf;
+}
+#event_details #summary {
+    margin-bottom: 20px;
+}
+
+#event_details .head_detail {
+    font-size: 15px;
+    color: #fff;
+}
+#event_details .detail {
+    margin-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* GLOBAL CLASSES */
+.clear {
+    clear: both;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.question_icon {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
